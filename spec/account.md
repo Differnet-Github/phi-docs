@@ -10,7 +10,6 @@ Each folder in `~/accounts/accountID/` represents a new account.
 
 The contents of the folder are:	 
 `~/accounts/accountID/account.json` - encryption data for the account	 
-`~/accounts/accountID/archive.json` - encrypted archive of the account  
 `~/accounts/accountID/network.json` - data for running the networks  
 `~/accounts/accountID/network-buffer.json` - buffer of encrypted data that was sent to this account while logged out  
 `~/accounts/accountID/files.json` - encrypted data for accessing the rest of the file system  
@@ -117,28 +116,6 @@ IP contains a public and a private key for sending data through this service
 TODO:
 ##### i2p
 TODO:
-
-### archive.json
-```javascript
-[
-	{
-		"fingerprint": "----fingerprint----",
-
-		"cipher": "----Symmetric Cipher Algorithm----",
-		"lock": "----Asymmetric Encryption Algorithm----",
-		"key": "----Symmetric Key Asymmetric Cipher Text----",
-		"private": "---Private Key Symmetric Cipher Text----",
-
-		"timestamp": 1570809834377,
-
-		"signer": "----Signing Algorithm----",
-		"signature": "----Signature----"
-	},
-	...
-]
-```
-##### Archive
-The account archive is a list of old disposable keys for the account. The private key will be encrypt with a symmetric key and that key will be encrypted with the master key. The public key will be stored as a hash. Each key in the archive in include a timestamp of when it was archived and a signature from the master key.
 
 ### network-buffer.json
 ```javascript

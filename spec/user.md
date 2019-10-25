@@ -85,4 +85,4 @@ Disposable is a key pair as defined in [account](./account.md)
 ]
 ```
 ##### Archive
-Archive is a disposable key archive as defined in [account](./account.md)
+The account archive is a list of old disposable keys for the account. The private key will be encrypt with a symmetric key and that key will be encrypted with the master key. The public key will be stored as a hash. Each key in the archive in include a timestamp of when it was archived and a signature from the master key.
