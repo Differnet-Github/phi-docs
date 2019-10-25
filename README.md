@@ -6,17 +6,17 @@ This repository is intended to provide all information needed to learn about phi
 
 ### Learn:
 
-The specification of how each part of the program should be set up.
-[Specification](spec/index.md)
+The specification of how each part of the program should be set up.  
+[Specification](spec/index.md)  
 
-The packets that are sent to and from all client servers
-[Network API](api.md)
+The packets that are sent to and from all client servers  
+[Network API](api.md)  
 
 ### Contribute:
 
-How you should and shouldn't format your code
-[Coding Standards](coding_standards.md) *TODO*
+How you should and shouldn't format your code  
+[Coding Standards](coding_standards.md) *TODO*  
 
-Project file structures
-[Android](android_structure.md) *TODO*
-[iOS](iOS_structure.md) *TODO*
+Project file structures  
+[Android](android_structure.md) *TODO*  
+[iOS](iOS_structure.md) *TODO*  
